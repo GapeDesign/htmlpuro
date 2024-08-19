@@ -1,0 +1,136 @@
+/* Variables */
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-cinza-1: #eaedf5;
+    --color-cinza-2: #636266;
+    --color-cinza-3: #b1b0b2;
+    --color-vermelho-1: #ff0000;
+    --color-vermelho-2: #d10429;
+    --color-laranja-1: #f76c00;
+    --color-amarelo-1: #ffcc00;
+    --color-amarelo-2: #fbc90b;
+    --color-amarelo-3: #cea500;
+    --color-verde-1: #486018;
+    --color-verde-2: #339933;
+    --color-verde-3: #2aae8a;
+    --color-azul-1: #0099cc;
+    --color-azul-2: #48a8d8;
+    --color-azul-3: #72a1e0;
+  }
+
+  
+  /* Typography Mixin */
+  .text-base {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-decoration: none;
+    text-transform: none;
+  }
+  
+  .text-base-14 {
+    font-size: 14px;
+  }
+  
+  .text-base-16 {
+    font-size: 16px;
+  }
+  
+  .text-base-18 {
+    font-size: 18px;
+  }
+  
+  .text-base-24 {
+    font-size: 24px;
+  }
+  
+  .text-weight-400 {
+    font-weight: 400;
+  }
+  
+  .text-weight-700 {
+    font-weight: 700;
+  }
+  
+  /* Table Styles */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .table th,
+  .table td {
+    font-size: 14px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-decoration: none;
+    text-transform: none;
+    padding: 12px 15px;
+    border: 1px solid #636266;
+    text-align: left;
+    position: relative;
+  }
+  
+  .table th {
+    background-color: #636266;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .filter-icon {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .filter-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-cinza-2);
+    z-index: 1;
+  }
+  
+  .filter-dropdown select {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+  }
+  
+  .table td {
+    background-color: #ffffff;
+  }
+  
+  .table td.highlight {
+    color: #f76c00;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .table td.status-open {
+    color: #d10429;
+  }
+  
+  .table td.status-closed {
+    color: #339933;
+  }
+  
+  .table td.status-warning {
+    color: #fbc90b;
+  }
+  
+  .table .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    margin-left: 10px;
+  }
+  

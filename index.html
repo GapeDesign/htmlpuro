@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela com Filtros Dropdown</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <table class="table" id="filterTable">
+    <thead>
+      <tr>
+        <th>Tipo de Ciclo
+          <span class="material-symbols-outlined filter-icon" data-column="0">filter_list</span>
+          <div class="filter-dropdown" data-column="0">
+            <select class="filter-select" data-column="0">
+              <option value="">Todos</option>
+              <option value="Mensal">Mensal</option>
+              <option value="Quadrimestral">Quadrimestral</option>
+            </select>
+          </div>
+        </th>
+        <th>Período
+          <span class="material-symbols-outlined filter-icon" data-column="1">filter_list</span>
+          <div class="filter-dropdown" data-column="1">
+            <select class="filter-select" data-column="1">
+              <option value="">Todos</option>
+              <option value="Agosto/2024">Agosto/2024</option>
+              <option value="Q2/2024">Q2/2024</option>
+            </select>
+          </div>
+        </th>
+        <th>Status
+          <span class="material-symbols-outlined filter-icon" data-column="2">filter_list</span>
+          <div class="filter-dropdown" data-column="2">
+            <select class="filter-select" data-column="2">
+              <option value="">Todos</option>
+              <option value="Aberto até 15/09/2024">Aberto até 15/09/2024</option>
+              <option value="V0 Aberta até 15/08/2024">V0 Aberta até 15/08/2024</option>
+            </select>
+          </div>
+        </th>
+        <th>Observações
+          <span class="material-symbols-outlined filter-icon" data-column="3">filter_list</span>
+          <div class="filter-dropdown" data-column="3">
+            <select class="filter-select" data-column="3">
+              <option value="">Todos</option>
+              <option value="NOVA MENSAGEM">NOVA MENSAGEM</option>
+              <option value="Sem inconsistências">Sem inconsistências</option>
+            </select>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mensal</td>
+        <td>Agosto/2024</td>
+        <td class="status-open">Aberto até 15/09/2024</td>
+        <td class="highlight">NOVA MENSAGEM <span class="icon"></span></td>
+      </tr>
+      <tr>
+        <td>Quadrimestral</td>
+        <td>Q2/2024</td>
+        <td class="status-closed">V0 Aberta até 15/08/2024</td>
+        <td>Sem inconsistências <span class="icon"></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <label for="date">Escolha uma data:</label>
+  <input type="date" id="date" name="date">
+  <label for="time">Escolha um horário:</label>
+  <input type="time" id="time" name="time">
+<select name="teste" id="selecionado">
+    <option value="" disabled selected>Selecione</option>
+    <option value="1">Abriu o Ciclo</option>
+    <option value="2">Enviou o Arquivo XYZ.pwf</option>
+
+</select>
+    
+
+  <script src="scripts.js"></script>
+</body>
+</html>
